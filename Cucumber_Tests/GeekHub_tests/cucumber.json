@@ -1,0 +1,410 @@
+[
+  {
+    "uri": "features/GeekHub.feature",
+    "id": "geekhub-login,-signout,-new-message,-create-comment",
+    "keyword": "Feature",
+    "name": "GeekHub Login, SignOut, New Message, Create Comment",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;login-to-geekhub-with-valid-email-and-password",
+        "keyword": "Scenario",
+        "name": "LogIn to GeekHub with Valid email and password",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the LogIn page",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1289832000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "enter email password and click LogIn",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1446216000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should LogIn and see text  Signed in successfully",
+            "line": 6,
+            "output": [
+              "\u001b[0;32;49msuccessfully logged in\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 91204000
+            }
+          }
+        ]
+      },
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;signout-to-geekhub",
+        "keyword": "Scenario",
+        "name": "SignOut to GeekHub",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user is already Logged in",
+            "line": 9,
+            "output": [
+              "\u001b[0;32;49musers is already logged in\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 60602000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "user clicks SignOut",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 632015000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "user shoud be signed out",
+            "line": 11,
+            "output": [
+              "\u001b[0;32;49mUser is signed out\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88001000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "see text Signed out successfully",
+            "line": 12,
+            "output": [
+              "\u001b[0;32;49msuccessfully signed out\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99402000
+            }
+          }
+        ]
+      },
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;create-new-message",
+        "keyword": "Scenario",
+        "name": "Create New Message",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "User is logged in",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1911635000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "New message link is visible",
+            "line": 16,
+            "output": [
+              "\u001b[0;32;49mNew Message link is visible\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68801000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "New Message link is clicked",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 632609000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Message Title and description are entered and create Message button is clicked",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1129418000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "New Message is visible on Homepage",
+            "line": 19,
+            "output": [
+              "\u001b[0;32;49mNew Message is visible on home page\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:92"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116003000
+            }
+          }
+        ]
+      },
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;create-comment",
+        "keyword": "Scenario",
+        "name": "Create Comment",
+        "description": "",
+        "line": 21,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "user logged in",
+            "line": 22,
+            "output": [
+              "\u001b[0;32;49musers is already logged in\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Create Comment is visible in Message details",
+            "line": 23,
+            "output": [
+              "\u001b[0;32;49m view details is visible\u001b[0m",
+              "\u001b[0;32;49mcreate comment button is visible\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:109"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 814616000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "comment is entered in comment section",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 167203000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Create Comment button is clicked",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 761212000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "comment is posted",
+            "line": 26,
+            "output": [
+              "\u001b[0;32;49mcomment is posted succusfully \u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74004000
+            }
+          }
+        ]
+      },
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;comment-edit-and-delete-links",
+        "keyword": "Scenario",
+        "name": "Comment Edit and Delete links",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "User logged in",
+            "line": 29,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:146"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 495007000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Message details is clicked",
+            "line": 30,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:150"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 636812000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "comment edit and delete links are visible",
+            "line": 31,
+            "output": [
+              "\u001b[0;32;49medit link is visible \u001b[0m",
+              "\u001b[0;32;49mdelete link is visible \u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:154"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146802000
+            }
+          }
+        ]
+      },
+      {
+        "id": "geekhub-login,-signout,-new-message,-create-comment;delete-comment-and-message",
+        "keyword": "Scenario",
+        "name": "Delete Comment and Message",
+        "description": "",
+        "line": 33,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "Message ID is known",
+            "line": 34,
+            "output": [
+              "\u001b[0;32;49mMessage id is 36\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:170"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 483006000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Comment ID is known",
+            "line": 35,
+            "output": [
+              "\u001b[0;32;49mComment id is 46\u001b[0m"
+            ],
+            "match": {
+              "location": "features/step_definitions/test_step.rb:175"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "Message details page is loaded",
+            "line": 36,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:179"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653218000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "Delete Comment",
+            "line": 37,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:183"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 232207000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "Delete Message",
+            "line": 38,
+            "match": {
+              "location": "features/step_definitions/test_step.rb:188"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2914054000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

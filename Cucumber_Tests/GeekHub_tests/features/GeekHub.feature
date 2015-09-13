@@ -1,4 +1,5 @@
-Feature: GeekHub Login, SignOut, New Message, Create Comment
+Feature: Validate Geek Hub Features
+
 
 Scenario: LogIn to GeekHub with Valid email and password
 Given  I am on the LogIn page 
